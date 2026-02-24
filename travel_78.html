@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>测试标题</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            padding: 15px;
+            font-family: "Microsoft Yahei", "PingFang SC", sans-serif;
+            line-height: 1.8;
+            background: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* 标题样式 - 居中、大号、加粗 */
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #222;
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        /* 基础信息行 - 灰色小字，居中 */
+        .base-info {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        .base-info span {
+            margin: 0 8px;
+        }
+        .base-info .tag {
+            color: #0088ff;
+            font-weight: 500;
+        }
+        /* 正文内容样式 */
+        .content {
+            font-size: 16px;
+            color: #444;
+            white-space: pre-line;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            padding: 0 5px;
+        }
+        /* 底部信息样式 - 浅灰色背景，圆角 */
+        .footer-info {
+            font-size: 13px;
+            color: #888;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+        .footer-info a {
+            color: #0088ff;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .footer-info a:hover {
+            text-decoration: underline;
+        }
+        /* 适配移动端 */
+        @media (max-width: 768px) {
+            .title { font-size: 22px; }
+            .content { font-size: 15px; }
+            .container { padding: 20px 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 标题区域 -->
+        <div class="title">测试标题</div>
+
+        <!-- 基础信息（时间、作者、标签） -->
+        <div class="base-info">
+            <span>发布时间：1975-06-24</span>
+            <span>来源：作者</span>
+            <span class="tag">地域标签：山西</span>
+            <span class="tag">类别标签：文化</span>
+        </div>
+
+        <!-- 正文内容 -->
+        <div class="content">正文</div>
+
+        <!-- 底部信息（原文链接、采集地址） -->
+        <div class="footer-info">
+            <div>原文链接：<a href="xxx.com" target="_blank">xxx.com</a></div>
+            <div>采集地址：出处</div>
+        </div>
+    </div>
+</body>
+</html>
