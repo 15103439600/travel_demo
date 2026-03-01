@@ -21,7 +21,6 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        /* 标题样式 - 居中、大号、加粗 */
         .title {
             font-size: 26px;
             font-weight: bold;
@@ -32,7 +31,6 @@
             padding-bottom: 15px;
             border-bottom: 1px solid #eee;
         }
-        /* 基础信息行 - 灰色小字，居中 */
         .base-info {
             font-size: 14px;
             color: #666;
@@ -47,7 +45,6 @@
             color: #0088ff;
             font-weight: 500;
         }
-        /* 正文内容样式 */
         .content {
             font-size: 16px;
             color: #444;
@@ -56,7 +53,6 @@
             margin-bottom: 30px;
             padding: 0 5px;
         }
-        /* 底部信息样式 - 浅灰色背景，圆角 */
         .footer-info {
             font-size: 13px;
             color: #888;
@@ -70,10 +66,6 @@
             text-decoration: none;
             word-break: break-all;
         }
-        .footer-info a:hover {
-            text-decoration: underline;
-        }
-        /* 适配移动端 */
         @media (max-width: 768px) {
             .title { font-size: 22px; }
             .content { font-size: 15px; }
@@ -83,37 +75,28 @@
 </head>
 <body>
     <div class="container">
-        <!-- 标题区域 -->
         <div class="title">2025民宿行业“创新好民宿”案例发布 山西省平遥杏花村客栈等三个优秀案例入选</div>
-
-        <!-- 基础信息（时间、作者、标签） -->
         <div class="base-info">
             <span>发布时间：2025-11-14</span>
             <span>来源：山西经济日报</span>
             <span class="tag">地域标签：山西</span>
             <span class="tag">类别标签：文化</span>
         </div>
-
-        <!-- 正文内容 -->
         <div class="content">近日，以“皖美乡约·宿造未来”为主题的第十一届全国民宿大会在安徽岳西县落下帷幕，会上发布了2025民宿行业“创新好民宿”案例名单。由山西省民宿文化协会推荐的平遥杏花村客栈、陵川民宿和太谷里·慕野精品民宿凭借特色运营与创新模式成功入选。
 平遥杏花村客栈凭借《杏花村文旅，引领“旅游＋”产业发展新格局》成功入选“民宿产品创新案例”，成为全国3个创新案例之一。该民宿是平遥古城内首家“晋商、汾酒”双文化融合的主题民宿。
 《陵川民宿：从“山间居所”到“文旅名片”的发展密码》成功入选“区域民宿产业高质量发展创新案例”，成为全国6个创新案例之一。该案例系统总结陵川示范区通过盘活土地资源、创新融资模式、革新运营管理等模式与路径，让“陵川民宿”这张文旅名片闪耀全国舞台。
 太谷里·慕野精品民宿《从太行徒步者到山西高端民宿标杆的十年征途》以其独特的经营理念与实践成功入选“2025民宿行业‘创新好民宿’入选案例”名单。该民宿以“守护太行文化、提供极致体验”为核心，成为守护与活化乡村之美的生动典范。</div>
-
-        <!-- 底部信息（原文链接、采集地址） -->
         <div class="footer-info">
             <div>原文链接：<a href="https://wlt.shanxi.gov.cn/xwzx/wlxx/202511/t20251114_9995764.shtml" target="_blank">https://wlt.shanxi.gov.cn/xwzx/wlxx/202511/t20251114_9995764.shtml</a></div>
             <div>采集地址：山西省文化和旅游厅</div>
         </div>
     </div>
+
+    <!-- 埋点统计：使用1x1像素图片（最可靠的方式） -->
+    <img src="http://192.168.3.9:8080/api/click/515?t=1772335897241"
+         style="width:1px; height:1px; position:absolute; opacity:0; pointer-events:none;"
+         alt=""
+         onload="console.log('统计成功')"
+         onerror="console.log('统计失败，但不会影响页面')"/>
 </body>
-<script>
-// 埋点：访问页面时调用统计接口
-  (function() {
-      var travelId = 515;
-      // 跨域请求埋点接口（使用img标签避免跨域问题）
-      var img = new Image();
-      img.src = 'http://localhost:8080/api/click/' + travelId ;
-  })();
-</script>
 </html>
